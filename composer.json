@@ -1,0 +1,27 @@
+{
+    "name": "wufly/kuaidiniao",
+    "description": "kuaidiniao for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wufly",
+            "email": "wfxykzd@163.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Wufly\\Kuaidiniao\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wufly\\Kuaidiniao\\KuaidiniaoServiceProvider"
+            ],
+            "aliases": {
+                "Kuaidiniao": "Wufly\\Kuaidiniao\\KuaidiniaoFacade"
+            }
+        }
+    }
+}
