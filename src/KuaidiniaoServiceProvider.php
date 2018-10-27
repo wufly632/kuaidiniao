@@ -22,11 +22,7 @@ class KuaidiniaoServiceProvider extends ServiceProvider
         ], 'kuaidiniao');
     }
     public function register() {
-        $this->mergeConfigFrom( __DIR__.'/../config/kuaidiniao.php', 'kuaidiniao');
-        $this->app->singleton('kuaidiniao', function($app) {
-            $config = $app->make('config');
-            return new KuaidiniaoService($config);
-        });
+        
     }
     public function provides() {
         return ['kuaidiniao'];

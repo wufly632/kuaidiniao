@@ -6,7 +6,8 @@
  */
 
 return [
-    'customer' => env('KUAIDINIAO_CUSTOMER'),
-    'key' => env('KUAIDINIAO_KEY'),
+    'ebusinessid' => env('EBUSINESS_ID'),
+    'appkey' => env('APPKEY'),
     'callbackUrl' => env('KUAIDINIAO_CALLBACKURL'),
+    'datatype'    => env('DATATYPE', 2),//数据类型：2-json
 ];
