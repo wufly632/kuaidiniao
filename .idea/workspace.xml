@@ -7,8 +7,6 @@
       <change afterPath="$PROJECT_DIR$/../judou-admin/resources/views/layouts/header.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../judou-admin/resources/views/layouts/left.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../judou-admin/resources/views/layouts/tip.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KuaidiniaoFacade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KuaidiniaoServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../conf/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../../conf/php.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../admin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.gitignore" afterDir="false" />
@@ -29,9 +27,7 @@
       <change beforePath="$PROJECT_DIR$/../admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../admin/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../admin/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/webpack.mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/kuaidiniao.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/kuaidiniao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KuaidiniaoService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/KuaidiniaoService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KuaidiniaoServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/KuaidiniaoServiceProvider.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +42,7 @@
     <session id="1656327052">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.opened" value="2" />
         </counts>
@@ -105,20 +101,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/KuaidiniaoService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="33" column="40" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="40" />
+            <state relative-caret-position="741">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/KuaidiniaoServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -224,12 +220,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540558392602</updated>
       <workItem from="1540558394195" duration="1930000" />
-      <workItem from="1540567948959" duration="2497000" />
+      <workItem from="1540567948959" duration="3080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4427000" />
+    <option name="totallyTimeSpent" value="5010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
@@ -289,17 +285,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/KuaidiniaoService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="33" column="40" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/KuaidiniaoServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KuaidiniaoService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>

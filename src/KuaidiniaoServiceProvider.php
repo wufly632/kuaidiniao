@@ -22,7 +22,7 @@ class KuaidiniaoServiceProvider extends ServiceProvider
         ], 'kuaidiniao');
     }
     public function register() {
-        
+
     }
     public function provides() {
         return ['kuaidiniao'];

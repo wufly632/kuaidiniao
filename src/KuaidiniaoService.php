@@ -2,7 +2,7 @@
 // +----------------------------------------------------------------------
 // | KuaidiniaoService.php
 // +----------------------------------------------------------------------
-// | Description: 
+// | Description:
 // +----------------------------------------------------------------------
 // | Time: 2018/10/26 下午9:00
 // +----------------------------------------------------------------------
@@ -18,12 +18,10 @@ class KuaidiniaoService
     protected $requestType; //请求指令类型 1002-及时查询Api 2002-单号识别Api
     protected $config;
 
-    private $ReqURL = 'http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx'; //即时接口地址
-    private $OrderURL = 'http://api.kdniao.cc/api/dist'; //即时接口地址
+    private $ReqURL = 'http://api.kdniao.com/Ebusiness/EbusinessOrderHandle.aspx'; //即时接口地址
+    private $OrderURL = 'http://api.kdniao.com/api/dist'; //即时接口地址
 
-    public function __construct($LogisticCode, $ShipperCode = '', $RequestType=1002) {
-        $this->logisticCode = $LogisticCode;
-        $this->shipperCode = $ShipperCode;
+    public function __construct($RequestType=1002) {
         $this->requestType = $RequestType;
         $this->config = config('kuaidiniao');
     }
@@ -32,14 +30,14 @@ class KuaidiniaoService
      * Json方式 查询订单物流轨迹
      */
     public function getOrderTracesByJson($ShipperCode, $LogisticCode){
-        $requestData= "{'OrderCode':'','ShipperCode':'".$ShipperCode."','LogisticCode':'".$LogisticCode."'}";
-
+        $requestData  = "{'OrderCode':'','ShipperCode':'".$ShipperCode."','LogisticCode':'".$LogisticCode."'}";
         $datas = array(
             'EBusinessID' => $this->config['ebusinessid'],
             'RequestType' => '1002',
             'RequestData' => urlencode($requestData) ,
             'DataType' => '2',
         );
+        // print_r($datas);die;
         $datas['DataSign'] = $this->encrypt($requestData, $this->config['appkey']);
         $result=$this->sendPost($this->ReqURL, $datas);
 
@@ -53,15 +51,13 @@ class KuaidiniaoService
      */
     public function orderTracesSubByJson($ShipperCode, $LogisticCode){
         $requestData = "{'OrderCode':'','ShipperCode':'".$ShipperCode."','LogisticCode':'".$LogisticCode."'}";
-
-
         $datas = array(
-            'EBusinessID' => $this->EBusinessID,
+            'EBusinessID' => $this->config['ebusinessid'],
             'RequestType' => '1008',
             'RequestData' => urlencode($requestData) ,
             'DataType' => '2',
         );
-        $datas['DataSign'] = $this->encrypt($requestData, $this->AppKey);
+        $datas['DataSign'] = $this->encrypt($requestData, $this->config['appkey']);
         $result=$this->sendPost($this->OrderURL, $datas);
 
         //根据公司业务处理返回的信息......
